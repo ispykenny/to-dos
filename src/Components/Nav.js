@@ -20,7 +20,7 @@ const Nav = () => {
         <nav>
           <ul>
             <li>
-              <a href="https://twitter.com/ispykenny" target="_blank">By @ispykenny</a>
+              <a href="https://twitter.com/ispykenny" target="_blank" rel="noreferrer">By @ispykenny</a>
             </li>
           </ul>
         </nav>
