@@ -10,7 +10,7 @@ function App() {
         <Switch>
           <Route 
             exact
-            path="/dashboard"
+            path="/"
             render={(() => <Dashboard/>)}
           />
         </Switch>
