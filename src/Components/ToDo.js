@@ -20,13 +20,12 @@ const ToDo = ({item, onClick, onChange}) => {
         </div>
       </div>
       <button onClick={onClick}>
-      <svg width="8" height="8" viewBox="0 0 5.664 5.664">
-        <g transform="translate(-277.746 -193.357)">
-          <path d="M274.843,194.064l4.25,4.25" transform="translate(3.609)" fill="none" stroke="#adadad" strokeLinecap="round" strokeWidth="1"/>
-          <path d="M0,0,4.25,4.25" transform="translate(282.702 194.064) rotate(90)" fill="none" stroke="#adadad" strokeLinecap="round" strokeWidth="1"/>
-        </g>
-      </svg>
-
+        <svg width="8" height="8" viewBox="0 0 5.664 5.664">
+          <g transform="translate(-277.746 -193.357)">
+            <path d="M274.843,194.064l4.25,4.25" transform="translate(3.609)" fill="none" stroke="#adadad" strokeLinecap="round" strokeWidth="1"/>
+            <path d="M0,0,4.25,4.25" transform="translate(282.702 194.064) rotate(90)" fill="none" stroke="#adadad" strokeLinecap="round" strokeWidth="1"/>
+          </g>
+        </svg>
       </button>
     </div>
   )

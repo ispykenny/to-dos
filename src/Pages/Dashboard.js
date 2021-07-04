@@ -9,7 +9,6 @@ const Dashboard = () => {
   return (
     <>
       <Inner>
-        <div>Your on the dashboard page</div>
         <AddToDos todos={todos} setTodos={setTodos}/>
         <DisplayedToDos todos={todos} setTodos={setTodos}/>
       </Inner>

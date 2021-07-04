@@ -24,18 +24,33 @@ const DisplayedToDos = ({todos, setTodos}) => {
     });
     setTodos(newTodos)
   }
+
+  const Congrats = () => {
+    if(get_completed() >= todos.length && todos.length >= 1) {
+      return <h4>Congrats you finished your list!</h4>
+    } else if(todos.length >= 1 && get_completed() < todos.length) {
+      return <h4>{todos.length - get_completed()} more to go!</h4>
+    } else {
+      return null
+    }
+  }
+
+
   return (
     <div>
-      <h3>To Dos: {todos.length} | Completed: {get_completed()}</h3>
-        {todos.length >= 1 ? todos.map((item, index) => (
+      <div className="list">
+        <h3>To Dos: {todos.length} <span>|</span> Completed: {get_completed()}</h3>
+        <Congrats/>
+        { todos.length >= 1 ? todos.map((item, index) => (
           <ToDo 
             key={index}
             item={item} 
             onChange={() => update_complete(item.id)}
             onClick={() => toggleItem(item.id)}
           />
-        )) : <NoToDos/>
-      }
+        )) : <NoToDos/> 
+        }
+      </div>
     </div>
   )
 }
