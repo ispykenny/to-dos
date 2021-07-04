@@ -1,0 +1,43 @@
+header .inner {
+  max-width: 1440px;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    margin: 0; padding: 0;
+    list-style-type: none;
+  }
+
+  a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 800;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+  
+  svg {
+    max-width: 40px;
+    box-shadow: 0px 0px 40px rgba(black, 0.1);
+    width: 100% !important;
+  }
+
+  span {
+    margin-left: 1em;
+    font-size: 12px;
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+  }
+}

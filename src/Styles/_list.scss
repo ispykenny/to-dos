@@ -1,5 +1,5 @@
 .list {
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 8em;
 
   h3 {
@@ -101,6 +101,6 @@
   color: #a4a4a4;
   cursor: pointer;
   top: 10px; right: 8px;
-  opacity: 0;
+  // opacity: 0;
   transition: opacity 300ms ease;
 }
