@@ -9,9 +9,8 @@ const AddToDos = ({todos, setTodos}) => {
 
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
-    console.log(storedTodos)
     if(storedTodos) setTodos(storedTodos)
-  }, [])
+  }, [setTodos])
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
