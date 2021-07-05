@@ -57,6 +57,14 @@
         }
       }
     }
+
+    &:focus, &:active {
+      ~ label {
+        .checkbox {  
+          border: 1px solid black;
+        }
+      }
+    }
   }
 }
 
@@ -102,5 +110,6 @@
   cursor: pointer;
   top: 10px; right: 8px;
   // opacity: 0;
+  outline-color: black;
   transition: opacity 300ms ease;
 }

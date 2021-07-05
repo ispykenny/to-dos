@@ -23,7 +23,11 @@
     border: none;
     outline: none;
     padding-left: 0.6em;
-    box-sizing:content-box
+    box-sizing:content-box;
+
+    &:focus {
+      border: 1px solid black;
+    }
   }
 
   button {
@@ -33,7 +37,7 @@
     border: none;
     position: relative;
     cursor: pointer;
-    outline: none;
+    outline-color: black;
 
     &:active {
       top: 1px;
